@@ -3,7 +3,7 @@ session_start();
 require_once 'includes/config.php';
 require_once 'includes/functions.php';
 
-// ตรวจสอบการ login
+// ตรวจสfอบการ login
 if (!is_logged_in()) {
     echo json_encode(['success' => false, 'message' => 'กรุณาเข้าสู่ระบบก่อนใช้งาน']);
     exit;
