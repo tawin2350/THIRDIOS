@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third - Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo" id="logoToggle">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23ff6b9d'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'%3ET%3C/text%3E%3C/svg%3E" alt="Third Logo">
+                <span class="logo-text">THIRDIOS</span>
+                <i class="fas fa-chevron-left toggle-arrow" id="toggleArrow"></i>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-th-large"></i>
+                        <span class="nav-text">หน้าหลัก</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-file-invoice"></i>
+                        <span class="nav-text">สรรพสมิทธิ์</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="nav-text">แจ้งจ่าย</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-box"></i>
+                        <span class="nav-text">สต๊อก</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="nav-text">เคลมโคม</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span class="nav-text">เปิดร้องอย</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+                <span class="user-name">ผู้ใช้งาน</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>ระบบจัดการร้านค้า Third</h1>
+            </div>
+            <div class="header-right">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="ค้นหา">
+                </div>
+                <button class="theme-toggle" id="themeToggle" title="สลับธีม">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <div class="header-actions">
+                    <button class="btn-primary">นับสต๊อก</button>
+                    <button class="btn-secondary">รายงาน</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <!-- Welcome Card -->
+                <div class="welcome-card">
+                    <div class="welcome-text">
+                        <h2>ยินดีต้อนรับสู่ระบบจัดการ</h2>
+                        <p>จัดการธุรกิจของคุณได้อย่างมีประสิทธิภาพ<br>
+                        ตรวจสอบข้อมูล วิเคราะห์ยอดขาย และจัดการสต๊อกสินค้าได้ง่ายๆ</p>
+                        <button class="cta-btn">เริ่มต้นใช้งาน</button>
+                    </div>
+                    <div class="welcome-image">
+                        <div class="illustration">
+                            <div class="cloud cloud-1"></div>
+                            <div class="cloud cloud-2"></div>
+                            <div class="person-working">
+                                <div class="laptop"></div>
+                                <div class="person"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Card -->
+                <div class="stats-card">
+                    <h3>สรุปยอดขายรายเดือน</h3>
+                    <div class="stats-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>มกราคม</th>
+                                    <th>กุมภาพันธ์</th>
+                                    <th>มีนาคม</th>
+                                    <th>เมษายน</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ยอดขาย</td>
+                                    <td>450,000</td>
+                                    <td>520,000</td>
+                                    <td>480,000</td>
+                                    <td>650,000</td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td>กำไร</td>
+                                    <td>135,000</td>
+                                    <td>156,000</td>
+                                    <td>144,000</td>
+                                    <td>195,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Category Grid -->
+                <div class="category-section">
+                    <h3>เมนูจัดการ</h3>
+                    <div class="category-grid">
+                        <div class="category-card pink">
+                            <div class="category-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <p>จัดการรูปภาพ<br>สินค้า</p>
+                        </div>
+                        <div class="category-card orange">
+                            <div class="category-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <p>ข้อความและรีวิว</p>
+                        </div>
+                        <div class="category-card blue">
+                            <div class="category-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <p>รายการโปรด<br>ของลูกค้า</p>
+                        </div>
+                        <div class="category-card purple">
+                            <div class="category-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <p>โปรโมชั่นพิเศษ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <!-- Chart Card -->
+                <div class="chart-card">
+                    <h3>กราฟยอดขาย</h3>
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <span>มกราคม</span>
+                        <span>กุมภาพันธ์</span>
+                        <span>มีนาคม</span>
+                        <span>เมษายน</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/dashboard.js"></script>
+</body>
+</html>
