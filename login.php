@@ -12,7 +12,7 @@
         <div class="auth-card">
             <div class="auth-header">
                 <div class="logo-container">
-                    <img src="images/logo.png" alt="THIRDIOS Logo" class="logo">
+                    <img src="images/logo.PNG" alt="THIRDIOS Logo" class="logo">
                     <h1>THIRDIOS</h1>
                 </div>
                 <p>ระบบวิเคราะห์รายรับรายจ่ายส่วนบุคคล</p>

@@ -142,7 +142,7 @@ $summary = $conn->query($summary_sql)->fetch_assoc();
     <div class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <div class="logo" id="logoToggle">
-                <img src="../images/logo.png" alt="Third Logo">
+                <img src="../images/logo.PNG" alt="Third Logo">
                 <span class="logo-text">THIRDIOS ADMIN</span>
             </div>
         </div>
